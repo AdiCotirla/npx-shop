@@ -88,11 +88,34 @@ div > h1
     margin-right: 5px;
 }
 
-.contact > a:hover
+.contact > a
 {
-    box-sizing:content-box;
-    border: 1px solid white;
-    cursor: pointer;
+    margin: 20px auto;
+    color: white;
+    position: relative;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.contact > a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.contact > a:hover::before
+{
+    transform: scaleY(1);
+    opacity: 1;
 }
 
   @media only screen and (max-width: 500px) {

@@ -1,0 +1,62 @@
+/* .contact
+{background-color: red;
+grid-area: contacte;}
+.img
+{background-color: blue;
+grid-area: imge;}
+.texte
+{grid-area: textee;
+background-color: violet;}
+.butoanele
+{background-color: teal;
+grid-area: butoanelee;}
+
+.container
+{
+    display: grid;
+    grid-template-areas:
+    'imge imge imge imge'
+    'contacte imge imge textee'
+    'contacte imge imge textee'
+    'contacte imge imge butoanelee';
+    grid-gap: 10px;
+} */
+
+.contact {
+    grid-area: tel;
+  }
+.img
+{
+    grid-area: poza;
+}
+.texte
+{
+    grid-area: scris;
+}
+.butoanele
+{
+    grid-area: btn;
+}
+  
+  .grid-container {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-row: 0.2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    'tel poza poza scris scris'
+    'tel poza poza scris scris'
+    'tel poza poza scris scris'
+    'tel poza poza btn btn'
+    ;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
