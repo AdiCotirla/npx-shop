@@ -22,13 +22,13 @@ html
     display: grid;
     height: 80%;
     width: 90%;
-    grid-template-columns: 0.2fr 1fr 0fr 1fr;
+    grid-template-columns: 0.2fr 60vh 1fr;
     grid-row: 0.5fr 1fr 2fr 1fr;
     grid-template-areas: 
-    'tel poza poza scris'
-    'tel poza poza scris'
-    'tel poza poza scris'
-    'tel poza poza btn'
+    'tel poza scris'
+    'tel poza scris'
+    'tel poza scris'
+    'tel poza btn'
     ; 
     grid-gap: 10px;
     padding: 10px;
@@ -40,6 +40,7 @@ html
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-content: center;
 }
 
 .poza
@@ -49,6 +50,7 @@ html
 }
 .poza > img
 {
+    width: 100%;
     border-radius: 4px;
     height: 110%;
     position: absolute;
@@ -58,13 +60,35 @@ html
 
 .text
 {
+    position: relative;
+    margin-left: 120px;
+    margin-top: 100px;
     grid-area: scris;
+}
+.text > h1
+{
+    color: white;
+    font-size: 64px;
+}
+.text > h2 
+{
+    margin-top: 20px;
+    color:#59CD64;
+}
+.text > p
+{
+    color: rgb(161, 159, 159);
+    width: 460px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 .butoane
 {
+    margin-left: 70px;
     display: flex;
     flex-wrap: wrap;
     grid-area: btn;
+    font-size: 15px;
 }
 
 
@@ -80,26 +104,7 @@ html
     position: absolute;
     left: 130px;
 }
- .text > h1
-{
-    margin-left: -50px;
-    color: white;
-    font-size: 64px;
-}
-.text > h2 
-{
-    margin-left: -70px;
-    margin-top: 20px;
-    color:#59CD64;
-}
-.text > p
-{
-    margin-left: -90px;
-    color: rgb(161, 159, 159);
-    width: 460px;
-    margin-top: 30px;
-    font-size: 20px;
-}
+
 .butoane
 {
     display: flex;
@@ -109,7 +114,7 @@ html
 {
     color: white;
     position: relative;
-    margin-left: 40px;
+    margin-left: 20px;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -140,10 +145,9 @@ html
 
 .contact > a
 {
-    margin: 20px auto;
+    margin-top: 20px;
     color: white;
     position: relative;
-    margin-left: 40px;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -152,9 +156,9 @@ html
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1px;
     width: 100%;
-    height: 75px;
+    height: 70px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     transform: scaleY(2);
@@ -166,4 +170,158 @@ html
 {
     transform: scaleY(1);
     opacity: 1;
+}
+
+
+@media only screen and (max-width: 1050px) {
+html
+{
+    background-color: black;
+}
+.container
+{
+    border-radius: 4px;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 5%;
+    left: 5%;
+    background-color: rgb(58, 58, 58);
+    display: grid;
+    height: 110%;
+    width: 90%;
+    grid-template-columns: 10% 20% 40% 20% 10%;
+    grid-template-areas: 
+    'tel poza poza poza ...'
+    'tel poza poza poza ...'
+    '... scris scris scris ...'
+    '... btn btn btn ...'
+    ;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.contact
+{
+    margin-top: 150px;
+    width: 10%;
+    position: fixed;
+    grid-area: tel;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.poza
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    grid-area:poza;
+}
+.poza > img
+{
+    border-radius: 4px;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+}
+
+.butoane
+{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: btn;
+}
+.butoane > a
+{
+    color: white;
+    position: relative;
+    font-size: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.contact > a > img
+{
+    width: 50px;
+    height: 50px;
+}
+.text
+{
+    margin-left: 0px;
+    margin-top: 50px;
+    grid-area: scris;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text > h1
+{
+    color: white;
+    font-size: 32px;
+}
+.text > h2 
+{
+    font-size: 20px;
+    margin-top: 20px;
+    color:#59CD64;
+}
+.text > p
+{
+    color: rgb(161, 159, 159);
+    width: 280px;
+    margin-top: 30px;
+    font-size: 10px;
+}
+.logo
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 55px;
+}
+}
+
+@media only screen and (max-width: 550px)
+{
+
+.logo
+{
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    left: 20px;
+}
+.contact > a > img
+{
+    width: 30px;
+    height: 30px;
+}
+.container
+{
+    height: 120%;
+}
+.poza > img
+{
+   height: 100%;
+}
+.poza
+{
+   height: 50vh;
+}
+.text > p
+{
+    color: rgb(161, 159, 159);
+    width: 230px;
+    margin-top: 30px;
+    font-size: 10px;
+}
 }

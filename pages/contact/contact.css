@@ -42,12 +42,11 @@ grid-area: butoanelee;}
     display: grid;
     height: 80vh;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-row: 0.2fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
-    'tel poza poza scris scris'
-    'tel poza poza scris scris'
-    'tel poza poza scris scris'
-    'tel poza poza btn btn'
+    '... tel poza poza ...'
+    '... tel poza poza ...'
+    '... scris scris scris ...'
+    '... btn btn btn ...'
     ;
     grid-gap: 10px;
     background-color: #2196F3;
