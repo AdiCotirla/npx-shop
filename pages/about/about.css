@@ -118,7 +118,9 @@ html
     text-decoration: none;
     transition: 0.5s;
 }
-.butoane > a::before
+@media only screen and (min-width: 1050px)
+{
+ .butoane > a::before
 {
     content: '';
     position: absolute;
@@ -142,16 +144,7 @@ html
 {
     color:white;
 }
-
-.contact > a
-{
-    margin-top: 20px;
-    color: white;
-    position: relative;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.contact > a::before
+   .contact > a::before
 {
     content: '';
     position: absolute;
@@ -171,6 +164,17 @@ html
     transform: scaleY(1);
     opacity: 1;
 }
+}
+
+.contact > a
+{
+    margin-top: 20px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
 
 
 @media only screen and (max-width: 1050px) {
@@ -192,13 +196,11 @@ html
     width: 90%;
     grid-template-columns: 10% 20% 40% 20% 10%;
     grid-template-areas: 
-    'tel poza poza poza ...'
-    'tel poza poza poza ...'
-    '... scris scris scris ...'
-    '... btn btn btn ...'
+    'poza poza poza poza poza'
+    'poza poza poza poza poza'
+    'tel scris scris scris ...'
+    'tel btn btn btn ...'
     ;
-    grid-gap: 10px;
-    padding: 10px;
 }
 .contact
 {
@@ -307,14 +309,32 @@ html
 }
 .container
 {
+    border-radius: 4px;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 5%;
+    left: 5%;
+    background-color: rgb(58, 58, 58);
+    display: grid;
     height: 120%;
+    width: 90%;
+    grid-template-columns: 10% 20% 40% 20% 10%;
+    grid-template-areas: 
+    '... poza poza poza ...'
+    '... poza poza poza ...'
+    'tel scris scris scris ...'
+    'tel btn btn btn ...'
+    ;
 }
 .poza > img
 {
-   height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .poza
 {
+    width: 85%;
    height: 50vh;
 }
 .text > p
