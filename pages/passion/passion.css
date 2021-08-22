@@ -1,0 +1,284 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    background-color: black;
+}
+.header
+{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: 
+    'logo logo logo'
+    '... celeb tel'
+    '... celeb tel'
+    ;
+}
+.menu
+{
+    display: flex;
+    justify-content: space-between;
+    grid-area: logo;
+}
+
+
+
+
+
+
+
+
+.bar > ul
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 180px;
+}
+.bar > ul >li
+{
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+.bar > ul > li > a
+{
+    color: white;
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+.bar > ul > li > a:hover
+{
+    color: black;
+}
+.bar > ul > li > a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bar > ul > li > a:hover::before
+{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.bar > ul > li > a::after
+{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: scale(0);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bar > ul > li > a:hover::after
+{
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+}
+.butoane > a::before
+{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.butoane > a:hover::before
+{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.butoane > a
+{
+    margin-top: 20px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo
+{
+    margin-left: 200px;
+    width: 100px;
+    height: 100px;
+}
+.poza
+{
+    
+    grid-area: celeb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Port Lligat Sans', sans-serif;
+}
+.poza > img
+{
+    width: 100%;
+    height: 700px;
+}
+.poza > h1
+{
+    color: rgba(255, 255, 255, 0.726);
+    position: absolute;
+    top: 350px;
+    font-size: 120px;
+}
+.butoane
+{
+    position: fixed;
+    right: 50px;
+    top: 250px;
+    grid-area: tel;
+    display: flex;
+    flex-direction: column;
+}
+.butoane > a > img
+{
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.normala
+{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 150px;
+    justify-content: space-evenly;
+}
+.normala > p
+{
+    font-size: 40px;
+    width: 40%;
+    text-overflow: ellipsis;
+}
+.normala > img
+{
+    width: 500px;
+    height: 300px;
+}
+.invers
+{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-top: 150px;
+    justify-content: space-evenly;
+}
+
+.invers > p
+{
+    font-size: 40px;
+    width: 40%;
+    text-overflow: ellipsis;
+}
+.invers > img
+{
+    width: 500px;
+    height: 300px;
+}
+.it
+{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin-top: 150px;
+}
+.it > p
+{
+    margin-top: 30px;
+    font-size: 40px;
+    color: white;
+    width: 80%;
+    text-overflow: ellipsis;
+}
+.it > img
+{
+    height: 500px;
+    width: 80%;
+}
