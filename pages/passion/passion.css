@@ -136,7 +136,7 @@ html
 
 .logo
 {
-    margin-left: 200px;
+    margin-left: 200%;
     width: 100px;
     height: 100px;
 }
@@ -254,6 +254,10 @@ html
 }
 @media only screen and (max-width: 1050px) 
   {
+      .logo
+      {
+          margin-left: 100%;
+      }
     .butoane
     {
         position: fixed;
