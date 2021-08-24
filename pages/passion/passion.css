@@ -315,7 +315,7 @@ html
 }
 .butoane > a > img
 {
-    width: 80px;
+    width: 50px;
 }
 .poza > h1
 {
@@ -324,5 +324,9 @@ html
 .normala
 {
     width: 80%;
+}
+.bar > ul
+{
+    margin-right: 5%;
 }
   }
