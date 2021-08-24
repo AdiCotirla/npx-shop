@@ -338,7 +338,7 @@ html
     width: 70px;
     height: 60px;
     position: absolute;
-    left: 10%;
+    left: 5%;
 }
 .contact > a > img
 {
@@ -388,8 +388,14 @@ html
 }
 .butoane
 {
-    margin-bottom: 20vh;
+    margin-bottom: 20%;
 }
+.butoane > ul > li > a 
+{
+    padding: 2px;
+    text-decoration: none;
+}
+
 .contact
 {
     display: flex;
