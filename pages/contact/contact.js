@@ -49,7 +49,7 @@ else{
 
     newDiv.appendChild(divBtn)
     newDiv.appendChild(divH1)
-
+    console.log("The message has been send from " + nume.value + " to us.")
     container.appendChild(newDiv)
 }
 })
