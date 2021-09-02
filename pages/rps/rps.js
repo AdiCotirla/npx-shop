@@ -38,32 +38,12 @@ function addEventForUser(type) {
 
     } else {
       btn.disable = true;
-      containerMare.removeChild(containerBtn)
-      document.getElementById('h3').style.visibility = "hidden"
-      results.forEach(e => document.body.removeChild(e));
-      const img = document.createElement('img')
-      img.src = '/assets/retry.png'
-      img.classList.add("retry-btn")
-      img.addEventListener('click', retry)
-      document.body.appendChild(img)
-      if (counterUser > counterPc) {
-        var finish = document.createElement('h1')
-        finish.innerText = 'User has won .'
-        document.body.appendChild(finish)
-      } else if (counterUser < counterPc) {
-        var finish = document.createElement('h1')
-        finish.innerText = 'Pc has won .'
-        document.body.appendChild(finish)
-      } else if (counterUser == counterPc) {
-        var finish = document.createElement('h1')
-        finish.innerText = 'Perfect draw .'
-        document.body.appendChild(finish)
-      }
-
+      removeResults()
+      createImg()
+      finalResult()
     }
   });
 }
-
 
 addEventForUser("rock");
 addEventForUser("paper");
@@ -73,52 +53,79 @@ function retry() {
   location.reload();
 }
 
-{
-  function getResult(pcChoice, userChoice) {
+function getResult(pcChoice, userChoice) {
 
-    switch (userChoice) {
-      case "rock":
-        switch (pcChoice) {
-          case "rock":
-            return "Draw";
-          case "paper":
-            return "Pc win";
-          case "scissors":
-            return "User win";
-          default:
-        }
-        break;
-      case "paper":
-        switch (pcChoice) {
-          case "rock":
-            return "User win";
-          case "paper":
-            return "Draw";
-          case "scissors":
-            return "Pc win";
-          default:
-        }
-        break;
-      case "scissors":
-        switch (pcChoice) {
-          case "rock":
-            return "Pc win";
-          case "paper":
-            return "User win";
-          case "scissors":
-            return "Draw";
-          default:
-        }
-        break;
-      default:
-        break;
-    }
-
+  switch (userChoice) {
+    case "rock":
+      switch (pcChoice) {
+        case "rock":
+          return "Draw";
+        case "paper":
+          return "Pc win";
+        case "scissors":
+          return "User win";
+        default:
+      }
+      break;
+    case "paper":
+      switch (pcChoice) {
+        case "rock":
+          return "User win";
+        case "paper":
+          return "Draw";
+        case "scissors":
+          return "Pc win";
+        default:
+      }
+      break;
+    case "scissors":
+      switch (pcChoice) {
+        case "rock":
+          return "Pc win";
+        case "paper":
+          return "User win";
+        case "scissors":
+          return "Draw";
+        default:
+      }
+      break;
+    default:
+      break;
   }
+
 }
 
 
-
+function finalResult()
+{
+  if (counterUser > counterPc) {
+    var finish = document.createElement('h1')
+    finish.innerText = 'User has won .'
+    document.body.appendChild(finish)
+  } else if (counterUser < counterPc) {
+    var finish = document.createElement('h1')
+    finish.innerText = 'Pc has won .'
+    document.body.appendChild(finish)
+  } else if (counterUser == counterPc) {
+    var finish = document.createElement('h1')
+    finish.innerText = 'Perfect draw .'
+    document.body.appendChild(finish)
+  }
+}
+function createImg()
+{
+  const img = document.createElement('img')
+  img.src = '/assets/retry.png'
+  img.classList.add("retry-btn")
+  img.addEventListener('click', retry)
+  document.body.appendChild(img)
+}
+function removeResults()
+{
+  containerMare.removeChild(containerBtn)
+  document.getElementById('h3').style.visibility = "hidden"
+  results.forEach(e => document.body.removeChild(e));
+}
 
 var btnPlay = document.getElementById('btn-play')
 btnPlay.addEventListener('click', function () {

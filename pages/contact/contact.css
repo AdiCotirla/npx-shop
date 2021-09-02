@@ -8,13 +8,8 @@ html
 {
   background-color: black;
 }
-h1
-{
-  margin-bottom: 70px;
-  color: white;
-}
 .input {
-    height: 70vh;
+    height: 35vh;
     border-top-left-radius: 4px;
     grid-area: tel;
     display: flex;
@@ -30,39 +25,44 @@ h1
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
   }
   .input > div > input
   {
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 2rem;
     text-align: center;
-    width: 30%;
-    height: 10%;
+    width: 70%;
+    height: 25%;
     outline: none;
+    color:white;
+    background: linear-gradient(0deg, #000,#262626);
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
   }
   .input > div > input + input
   {
-    margin-top: 100px;
+    margin-top: 65px;
   }
 .mesaj
 {
-  height: 70vh;
-  border-top-right-radius: 4px;
   background-color: rgb(58, 58, 58);
     grid-area: poza;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -4444;
     
 }
 .mesaj > textarea
 {
+  background: linear-gradient(0deg, #000,#262626);
+  font-size: 2rem;
   outline: none;
+  color: white;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-  width: 80%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
   resize: none;
 }
 .buton
@@ -72,39 +72,70 @@ h1
   background-color: rgb(58, 58, 58);
   display: flex;
   height: 15vh;
-  margin-bottom: 10vh;
   justify-content: center;
   align-items: center;
   grid-area: btn;
 }
 button
 {
+  position: relative;
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 4px;
   border: none;
   background-color:#59CD64;
-  width: 100px;
+  width: 70%;
   height: 50px;
-  transition: 0.5s;
+  transition: 1s;
+}
+::placeholder
+{
+  color: white;
 }
 button:hover
 {
-    box-shadow: inset 6.5rem 0 0 0 #2943b9 ;
+  background-color: #2943b9; 
+   color: white;
 }
+
   
   .grid-container {
     display: grid;
     height: 100vh;
+    margin-bottom: 20vh;
     grid-template-columns: 10% 40% 40% 10%;
     grid-template-areas: 
     '... logo logo ...'
-    '... tel poza ...'
-    '... tel poza ...'
+    '... titlu titlu ...'
+    '... tel tel ...'
+    '... tel tel ...'
+    '... poza poza ...'
     '... btn btn ...'
     ;
   }
-  
+  .header
+  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+    grid-area: titlu;
+  }
+  .header > h1 
+  {
+    margin-bottom: 15px;
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+    width: 30%;
+    align-self: center;
+  }
+  .header > h2
+  {
+    margin-bottom: 35px;
+    font-size: 3rem;
+  }
   .menu
   {
     height: 100px;
@@ -219,6 +250,19 @@ button:hover
     height: 20%;
     width: 40%;
   }
+  @media only screen and (max-width: 1060px)
+  {
+    .header > h1
+    {
+      font-size: 2rem;
+      width: 35%;
+    }
+    .header > h2
+  {
+    margin-bottom: 35px;
+    font-size: 2rem;
+  }
+  }
 
   @media only screen and (max-width: 700px)
   {
@@ -244,6 +288,11 @@ button:hover
   {
     height: 200%;
     width: 30%;
+  }
+  .header > h1
+  {
+    font-size: 2rem;
+    width: 80%;
   }
 
     .bar
@@ -273,6 +322,7 @@ button:hover
       height: 100vh;
       grid-template-areas: 
       '... logo logo ...'
+      '... titlu titlu ...'
       '... tel tel ...'
       '... tel tel ...'
       '... poza poza ...'

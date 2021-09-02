@@ -187,6 +187,7 @@ html
 }
 .normala
 {
+    padding: 2rem;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     color: white;
@@ -198,7 +199,7 @@ html
 }
 .normala > p
 {
-    font-size: 40px;
+    font-size: 1.75rem;
     width: 40%;
     text-overflow: ellipsis;
 }
@@ -209,6 +210,7 @@ html
 }
 .invers
 {
+    padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     color: white;
     display: flex;
@@ -221,7 +223,7 @@ html
 
 .invers > p
 {
-    font-size: 40px;
+    font-size: 1.75rem;
     width: 40%;
     text-overflow: ellipsis;
 }
@@ -232,6 +234,7 @@ html
 }
 .it
 {
+    padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     display: flex;
     flex-direction: column;
@@ -244,7 +247,7 @@ html
 .it > p
 {
     margin-top: 30px;
-    font-size: 40px;
+    font-size: 1.75rem;
     color: white;
     width: 80%;
     text-overflow: ellipsis;

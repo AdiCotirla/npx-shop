@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,27 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
+
 <body>
     <div class="grid-container" id='container'>
-        <div class="menu">
-            <a href="/index.html" ><img class="logo"src="/assets/ac.jpg"></a>
-           <div class ="bar"> 
-            <ul>
-            <li><a href="/pages/about/about.html">About Me</a></li>
-            <li><a href="/pages/bmi/bmi.html">Bmi calculator</a></li>
-            <li><a href="/pages/rps/rps.html">Rps game</a></li>
-        </ul>
+        <div class="header">
+            <h1>CONTACT ME</h1>
+            <h2>Have questions or coments?</h2>
         </div>
+        <div class="menu">
+            <a href="/index.html"><img class="logo" src="/assets/ac.jpg"></a>
+            <div class="bar">
+                <ul>
+                    <li><a href="/pages/about/about.html">About Me</a></li>
+                    <li><a href="/pages/bmi/bmi.html">Bmi calculator</a></li>
+                    <li><a href="/pages/rps/rps.html">Rps game</a></li>
+                </ul>
+            </div>
         </div>
         <div class="input">
             <div>
-                <h1>Contact me:</h1>
                 <input type="text" id="nume" placeholder="Your name" maxlength="25">
-                <input type="email" id ="email"placeholder="Your email"maxlength="25">
+                <input type="email" id="email" placeholder="Your email" maxlength="25">
             </div>
         </div>
         <div class="mesaj">
-         <textarea id ="mesaj"cols="30" rows="10" placeholder="Your message..."></textarea>
+            <textarea id="mesaj" cols="30" rows="10" placeholder="Your message..."></textarea>
         </div>
         <div class="buton">
             <button id="btn">Submit</button>
@@ -38,4 +43,5 @@
     </div>
     <script src="contact.js"></script>
 </body>
+
 </html>
