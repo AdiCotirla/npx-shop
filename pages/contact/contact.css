@@ -72,11 +72,11 @@ html
   background-color: rgb(58, 58, 58);
   display: flex;
   height: 15vh;
-  justify-content: center;
+  justify-content:flex-end;
   align-items: center;
   grid-area: btn;
 }
-button
+#btn
 {
   position: relative;
   text-transform: uppercase;
@@ -84,20 +84,28 @@ button
   border-radius: 4px;
   border: none;
   background-color:#59CD64;
-  width: 70%;
+  width: 20%;
   height: 50px;
   transition: 1s;
+  margin-right: 15%;
 }
 ::placeholder
 {
   color: white;
 }
+#btn:hover
+{
+  box-shadow: inset 20rem 0 0 0 #2943b9 ;
+}
+button
+{
+  border: none;
+  transition: 0.5s;
+}
 button:hover
 {
-  background-color: #2943b9; 
-   color: white;
+  box-shadow: inset 7rem 0 0 0 #2943b9 ;
 }
-
   
   .grid-container {
     display: grid;
@@ -341,8 +349,9 @@ button:hover
     }
     .input > div > input
     {
-      width: 50%;
-      height: 12%;
+      font-size: 1rem;
+      width: 70%;
+      height: 20%;
     }
     .input > div > input + input
     {
@@ -357,5 +366,9 @@ button:hover
       border-top-right-radius: 0px;
       height: 20vh;
       align-items: flex-start;
+    }
+    .mesaj > textarea
+    {
+      font-size: 1rem;
     }
   } 
