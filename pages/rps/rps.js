@@ -11,7 +11,7 @@ function addEventForUser(type) {
   var btn = document.getElementById("btn-" + type);
 
   btn.addEventListener("click", function () {
-    if (click < 6) {
+    if (click < 5) {
       click++
       console.log(click)
       var randomChoiceIndex = Math.floor(Math.random() * 3);
