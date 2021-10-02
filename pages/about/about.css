@@ -355,7 +355,7 @@ html
     left: 5%;
     background-color: rgb(58, 58, 58);
     display: grid;
-    height: 100%;
+    height: 90%;
     width: 90%;
     grid-template-columns: 10% 80% 10%;
     grid-template-areas: 
@@ -391,7 +391,7 @@ html
 .text
 {
     margin-top: 20px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .butoane
 {
@@ -402,7 +402,7 @@ html
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 5px;
+    bottom: 10px;
     align-self: center;
    background-color: #59CD64;;
    
@@ -418,7 +418,7 @@ html
 .butoane > ul > li > a 
 {
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px;
     text-decoration: none;
 }
