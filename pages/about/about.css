@@ -324,7 +324,7 @@ html
 .logo
 {
     width: 80px;
-    height: 80px;
+    height: 8%;
     position: absolute;
     left: 10%;
 }
@@ -355,7 +355,7 @@ html
     left: 5%;
     background-color: rgb(58, 58, 58);
     display: grid;
-    height: 88%;
+    height: 100%;
     width: 90%;
     grid-template-columns: 10% 80% 10%;
     grid-template-areas: 
@@ -379,12 +379,12 @@ html
 {
     color: rgb(161, 159, 159);
     width: 230px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 10px;
 }
 .text
 {
-    margin-top: 0px;
+    margin-top: -70%;
 }
 .butoane
 {
