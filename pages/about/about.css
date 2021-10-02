@@ -362,7 +362,6 @@ html
     '... poza ...'
     '... poza ...'
     'tel scris ...'
-    /* 'tel btn ...' */
     ;
 }
 .poza > img
@@ -389,7 +388,7 @@ html
 }
 .text
 {
-    margin-top: -20%;
+    margin-top: -10%;
 }
 .butoane
 {
@@ -400,9 +399,9 @@ html
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    bottom: -10%;
     align-self: center;
-   background-color: red;
+   background-color: #59CD64;;
    
 }
 .butoane > ul 
