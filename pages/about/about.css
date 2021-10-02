@@ -399,7 +399,7 @@ html
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: -10%;
+    bottom: -10px;
     align-self: center;
    background-color: #59CD64;;
    
