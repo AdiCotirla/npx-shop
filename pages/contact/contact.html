@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <form action="https://formsubmit.co/blogsuport9@gmail.com" method="POST">
     <div class="grid-container" id='container'>
         <div class="header">
             <h1>CONTACT ME</h1>
@@ -30,17 +31,19 @@
         </div>
         <div class="input">
             <div>
-                <input type="text" id="nume" placeholder="Your name" maxlength="25">
-                <input type="email" id="email" placeholder="Your email" maxlength="25">
+                <input type="hidden" name="_next" value ="https://adicotirla.github.io/index.html">
+                <input type="text" id="nume" name="Name" placeholder="Your name" maxlength="25">
+                <input type="email" id="email" name="Email"placeholder="Your email" maxlength="25">
             </div>
         </div>
         <div class="mesaj">
-            <textarea id="mesaj" cols="30" rows="10" placeholder="Your message..."></textarea>
+            <textarea id="mesaj" name="Mesaj" cols="30" rows="10" placeholder="Your message..."></textarea>
         </div>
         <div class="buton">
-            <button id="btn">Submit</button>
+            <button type="submit" id="btn">Submit</button>
         </div>
     </div>
+</form>
     <script src="contact.js"></script>
 </body>
 
