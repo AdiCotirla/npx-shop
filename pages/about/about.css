@@ -355,7 +355,7 @@ html
     left: 5%;
     background-color: rgb(58, 58, 58);
     display: grid;
-    height: 90%;
+    height: 100%;
     width: 90%;
     grid-template-columns: 10% 80% 10%;
     grid-template-areas: 
@@ -390,7 +390,8 @@ html
 }
 .text
 {
-    margin-top: 0;
+    margin-top: 20px;
+    margin-bottom: 5%;
 }
 .butoane
 {
