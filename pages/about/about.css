@@ -378,7 +378,7 @@ html
 {
     color: rgb(161, 159, 159);
     width: 230px;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     margin-top: 0px;
     font-size: 10px;
 }
@@ -399,7 +399,7 @@ html
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: -10px;
+    bottom: 0px;
     align-self: center;
    background-color: #59CD64;;
    
