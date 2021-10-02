@@ -379,7 +379,7 @@ html
 {
     color: rgb(161, 159, 159);
     width: 230px;
-    margin-bottom: 25%;
+    margin-bottom: 15%;
     margin-top: 0px;
     font-size: 10px;
 }
@@ -402,7 +402,7 @@ html
     position: fixed;
     bottom: 0;
     align-self: center;
-   background-color: #59CD64;
+   background-color: red;
    
 }
 .butoane > ul 
