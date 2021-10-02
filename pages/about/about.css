@@ -285,6 +285,7 @@ html
     font-size: 15px;
     text-decoration: none;
     transition: 0.5s;
+    
 }
 .contact > a > img
 {
@@ -335,7 +336,7 @@ html
 .logo
 {
     width: 70px;
-    height: 60px;
+    height: 8%;
     position: absolute;
     left: 5%;
 }
@@ -361,7 +362,7 @@ html
     '... poza ...'
     '... poza ...'
     'tel scris ...'
-    'tel btn ...'
+    /* 'tel btn ...' */
     ;
 }
 .poza > img
@@ -383,15 +384,36 @@ html
 }
 .text
 {
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-bottom: 20%;
 }
 .butoane
 {
-    margin-bottom: 20%;
+    border-radius: 4px;
+    width: 90%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    align-self: center;
+   background-color: rgb(167, 167, 4);
+   
+}
+.butoane > ul 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
 .butoane > ul > li > a 
 {
-    padding: 2px;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
     text-decoration: none;
 }
 

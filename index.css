@@ -119,6 +119,7 @@ div > h2
 }
 .btn
 {
+    color: black;
     background-color:red;
     border-radius: 4px;
     margin-top: 10px;
