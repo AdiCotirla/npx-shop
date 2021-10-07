@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <form action="https://formsubmit.co/blogsuport9@gmail.com" method="POST">
+    <div class="grid-container" id='container'>
+        <div class="header">
+            <h1>CONTACT ME</h1>
+            <h2>Have questions or coments?</h2>
+        </div>
+        <div class="menu">
+            <a href="/index.html"><img class="logo" src="/assets/ac.jpg"></a>
+            <div class="bar">
+                <ul>
+                    <li><a href="/pages/about/about.html">About Me</a></li>
+                    <li><a href="/pages/bmi/bmi.html">Bmi calculator</a></li>
+                    <li><a href="/pages/rps/rps.html">Rps game</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="input">
+            <div>
+                <input type="hidden" name="_next" value ="https://adicotirla.github.io/index.html">
+                <input type="text" id="nume" name="Name" placeholder="Your name" maxlength="25">
+                <input type="email" id="email" name="Email"placeholder="Your email" maxlength="25">
+            </div>
+        </div>
+        <div class="mesaj">
+            <textarea id="mesaj" name="Mesaj" cols="30" rows="10" placeholder="Your message..."></textarea>
+        </div>
+        <div class="buton">
+            <button type="submit" id="btn">Submit</button>
+        </div>
+    </div>
+</form>
+    <script src="contact.js"></script>
+</body>
+
+</html>

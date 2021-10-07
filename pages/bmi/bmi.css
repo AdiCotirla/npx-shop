@@ -1,0 +1,249 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Port Lligat Sans', sans-serif;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(119, 118, 118, 0.74);
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: rgba(187, 187, 187, 0.979);
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: white;
+}
+html
+{
+    background-color: black;
+}
+
+.grid-container
+{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns:10% 30% 50% 10%;
+    grid-template-areas: 
+    '... calc calc tel'
+    '... calc calc tel'
+    '... calc calc tel'
+    '... img img tel'
+}
+
+.main
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 100%;
+    width: 80%;
+    height: 50vh;
+    grid-area: calc;
+    color: white;
+}
+.text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.inputuri
+{
+    background-color: rgb(80, 79, 79);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4px;
+}
+.inputuri > input
+{
+    height: 15%;
+    margin-left: 10%;
+}
+.inputs
+{
+    margin-top: 5%;
+    width: 30%;
+}
+.buton
+{
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  align-self: center;
+  background-color:#59CD64;
+  width: 20%;
+  height: 10%;
+  margin-top: 12%;
+  transition: 0.5s;
+}
+.buton:hover
+{
+    box-shadow: inset 8rem 0 0 0 #2943b9 ;
+}
+
+.result
+{
+    margin-top: 10%;
+    width: 50%;
+}
+.img
+{
+    display: flex;
+    justify-content: center;
+    grid-area: img;
+    margin-top: 10%;
+}
+.img > img
+{
+    width: 90%;
+    height: 80vh;
+    margin-bottom: 10vh;
+}
+.butoane
+{
+    position: fixed;
+    right: 50px;
+    top: 250px;
+    grid-area: tel;
+    display: flex;
+    flex-direction: column;
+}
+.butoane > a > img
+{
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+}
+.butoane > a::before
+{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.butoane > a:hover::before
+{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.butoane > a
+{
+    margin-top: 20px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+.menu
+{
+    display: flex;
+    justify-content: space-between;
+    grid-area: logo;
+}
+.logo
+{
+    margin-left: 200%;
+    width: 100px;
+    height: 100px;
+}
+.bar > ul
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 150px;
+}
+.bar > ul >li
+{
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+.bar > ul > li > a
+{
+    color: white;
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+.bar > ul > li > a:hover
+{
+    color: black;
+}
+.bar > ul > li > a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bar > ul > li > a:hover::before
+{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.bar > ul > li > a::after
+{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: scale(0);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bar > ul > li > a:hover::after
+{
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+}
