@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+.info
+{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 40px;
+    color: white;
+    font-size: 0.8vw;
+    font-weight: bold;
+    cursor:grab;
+    transition: 1s;
+}
+.info > span
+{
+   padding: 10px;
+}

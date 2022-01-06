@@ -1,0 +1,84 @@
+.menu
+{
+    width: 100%;
+}
+.menu-list
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    margin: 2% 0 2% 0;
+    font-family: none;
+}
+.list
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.list > li > a
+{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-size: 1vw;
+    font-weight: 100;
+    transition: 0.5s;
+}
+
+.navbar-center > li >  h1
+{
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    
+}
+.navbar-left > li > a ,
+.navbar-right > li > a 
+{
+    padding: 7.5px 15px;
+    letter-spacing: 0.2em;
+}
+
+.navbar-left > li > a::after
+{
+    content: '';
+   position: absolute;
+   background-color: black;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: 0;
+   transition: 0.5s;
+}
+.navbar-left > li > a:hover::after
+{
+    width: 100%;
+}
+.cart
+{
+    color: black;
+    cursor: pointer;
+    width: 3vw;
+    height: 3vh;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+.navbar-left
+{
+    margin-right: 10%;
+}
+.navbar-right
+{
+    margin-left: 10%;
+}
