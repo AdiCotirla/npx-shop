@@ -42,23 +42,23 @@ function App() {
         <NavBar />
         <Infos />
         <Switch>
-          <Route path="/" exact>
+          <Route path="/npx-shop/" exact>
             <ImageSlider slides={SliderData} />
             <Category category={Categories} />
           </Route>
-          <Route path="/supreme" exact>
+          <Route path="/npx-shop/supreme" exact>
             <Product myObj={supremeData} addToCartFunction={addToCart}  />
           </Route>
-          <Route path="/offwhite" exact>
+          <Route path="/npx-shop/offwhite" exact>
             <Product myObj={offwhiteData} addToCartFunction={addToCart} />
           </Route>
-          <Route path="/bape" exact>
+          <Route path="/npx-shop/bape" exact>
             <Product myObj={bapeData}  addToCartFunction={addToCart} />
           </Route>
-          <Route path="/brands" exact>
+          <Route path="/npx-shop/brands" exact>
             <Product myObj={Brands}  addToCartFunction={addToCart} />
           </Route>
-          <Route path="/cart" exact>
+          <Route path="/npx-shop/cart" exact>
             <Cart data={cartList}/>
           </Route>
         </Switch>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './slider.css'
 import { SliderData } from '../../Data/sliderData';
 import { useState } from 'react';
@@ -14,7 +14,6 @@ const ImageSlider = ({slides}) =>
     const lastPhoto = () =>{
         setCurrent(current === 0 ? length - 1 : current - 1)
     };
-    console.log(current)
     return(
             <section className="slider">
             <FaArrowAltCircleLeft className="arrow-left" onClick={lastPhoto}/>
