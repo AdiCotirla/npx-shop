@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/npx-shop/static/css/main.dd3aa068.css",
-    "main.js": "/npx-shop/static/js/main.f178a331.js",
+    "main.js": "/npx-shop/static/js/main.2009b358.js",
     "index.html": "/npx-shop/index.html",
     "main.dd3aa068.css.map": "/npx-shop/static/css/main.dd3aa068.css.map",
-    "main.f178a331.js.map": "/npx-shop/static/js/main.f178a331.js.map"
+    "main.2009b358.js.map": "/npx-shop/static/js/main.2009b358.js.map"
   },
   "entrypoints": [
     "static/css/main.dd3aa068.css",
-    "static/js/main.f178a331.js"
+    "static/js/main.2009b358.js"
   ]
 }
